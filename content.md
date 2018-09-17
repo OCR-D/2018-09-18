@@ -20,11 +20,11 @@ class: title-slide
 | |
 | :-------------------------------------------:                                        |
 | Elisa Herrmann
-| Clemens Neudecker |
 | Kay Würzner |
 | Matthias Boenig |
 | Volker Hartmann |
 | Clemens Neudecker |
+| Konstantin Baierer |
 
 ## [http://ocr-d.github.io/2018-09-18](http://ocr-d.github.io/2018-09-18)
 
