@@ -41,33 +41,24 @@ class: title-slide
 
 * Call for tenders complete
 * High-Quality ground truth in wided variety of literature
+* Changed requirements => re-processing of existing GT in Q4 2018
 
 ---
 
-# JLCL Special Issue on Automatic Text and Layout Recognition
+# JLCL Special Issue
 
-* GT4HistOCR: paper on arxiv, data on zenodo
-* Publication date: ???
-
----
-
-# GitHub Updates
-
-* OCRD-ZIP & OCRD-GITZIP
-* Many fixes in core/spec
-* ocrd-train gaining traction
-* Current versions:
-  * spec: 2.3.0
-  * core: 0.8.2
+* Publication date ~ October 15th
+* GT4HistOCR: [paper on arxiv](https://arxiv.org/abs/1809.05501), [data on zenodo](https://zenodo.org/record/1344132)
 
 ---
 
-# Repositories
+# Data storage
 
 * OCR-D research data repository
-* long-term preservation archive
+* Long-term preservation archive
 * Ground truth repository
 * Model repository
+* Font repository
 * Software repository
 
 ---
@@ -75,22 +66,78 @@ class: title-slide
 # Software Best Practices
 
 MUST:
-* Semantic Versioning and releases
-* Test scripts (use OCR-D/assets)
-* Dockerfile
+* Publish on GitHub
+* Test scripts (use [OCR-D/assets](https://github.com/OCR-D/assets) for test data)
+* Minimal documentation
+* [Dockerfile](https://ocr-d.github.io/docker)
 
-NICE:
-* Changelog
-* Continuous Integration 
+NICE
+* [Semantic Versioning](http://semver.org/) and [releases](https://github.com/OCR-D/spec/releases)
+* [Changelog](https://github.com/OCR-D/spec/blob/master/CHANGELOG.md)
+* [Continuous Integration](https://github.com/OCR-D/core/blob/master/.travis.yml)
 
 ---
 
-# Documentation Best Practices
+# Minimal Documentation
 
-* One file `LICENSE` with text of Apache 2.0 license in root
+* One file [`LICENSE` with text of Apache 2.0 license in root](https://github.com/OCR-D/core/blob/master/LICENSE)
 * One file `README.md` with short description
-* One file `ocrd-tool.json` with formal description of repository and tools
-* On GitHub please
+* One file [`ocrd-tool.json` with formal description of repository and tools](https://ocr-d.github.io/ocrd_tool)
+
+ 
+
+* Documentation on Documentation in Q4 2018
+
+---
+
+# GitHub Updates
+
+* Many fixes in [spec](https://github.com/OCR-D/spec), [core](https://github.com/OCR-D/core), [assets](https://github.com/OCR-D/assets)
+* [ocrd-train](https://github.com/OCR-D/ocrd-train) for training tesseract
+* Current versions:
+  * spec: 2.3.0
+  * core: 0.8.2
+  * assets: rolling
+
+---
+
+# Technical issues
+
+* Serialization of processed results
+  * OCRD-ZIP now based on BagIt, [spec#70](https://github.com/OCR-D/spec/pull/70)
+  * OCRD-GITZIP, [spec#73](https://github.com/OCR-D/spec/pull/70)
+* Discrepancies in METS/PAGE data, [core#176](https://github.com/OCR-D/core/issues/176)
+* Modelling inline segmentation/order ambiguity, [spec#72](https://github.com/OCR-D/spec/issues/72), [assets#13](https://github.com/OCR-D/assets/issues/13), [assets#12](https://github.com/OCR-D/assets/issues/12)
+* Modelling parameters representing files, [spec#69](https://github.com/OCR-D/spec/issues/69)
+* ...
+
+ 
+
+Please open/comment issues and let's [chat on gitter](https://gitter.im/OCR-D/Lobby).
+
+---
+
+# Progress reports by MP
+
+Your turn :)
+
+---
+
+# Our questions for you
+
+* Have GT requirements changed or new ones come up?
+* How far along are alpha version implementing interfaces?
+* Who will be using OCR-D/core? Those who do: Is it helpful?
+* Are the specs clear? Too detailed? Not detailed enough?
+* Have you been publishing articles recently?
+* Satisfied with communication channels?
+
+---
+
+# Save the Dates!
+
+* Bibliotheca Baltica, Oct 4/5. [Doodle for OCR-D meetup](https://doodle.com/poll/gbrwatuv3genbpfn)
+* [DHd2019, CfP](https://dhd2019.org/call-for-papers/) Deadline September 30
 
 ---
 
@@ -99,9 +146,6 @@ NICE:
 <center>
 <img src="figures/end-man.png" height="400"/>
 </center>
-
-Links zu Open Source OCR: [github.com/kba/awesome-ocr](https://github.com/kba/awesome-ocr))
-Links zu freier Ground Truth: [github.com/kba/awesome-ocr](https://github.com/cneud/ocr-gt))
 
 <center>
 https://ocr-d.de
@@ -112,5 +156,5 @@ https://ocr-d.github.io
 </center>
 
 <center>
-https://github.com/OCR-D
+https://gitter.im/OCR-D/Lobby
 </center>
